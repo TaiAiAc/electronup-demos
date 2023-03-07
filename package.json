@@ -1,0 +1,40 @@
+{
+  "name": "electronup-demos",
+  "version": "1.0.0",
+  "description": "electronup  demos",
+  "author": "quiteer",
+  "license": "MIT",
+  "homepage": "https://github.com/TaiAiAc/electronup-demos#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaiAiAc/electronup-demos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TaiAiAc/electronup-demos/issues"
+  },
+  "keywords": [
+    "electron",
+    "electronup"
+  ],
+  "dependencies": {
+    "@quiteer/electron-ipc": "^0.1.0",
+    "@youliso/electronic": "^0.1.2",
+    "naive-ui": "^2.34.3",
+    "pinia": "^2.0.33",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@quiteer/electronup": "^1.0.0",
+    "@quiteer/eslint-config": "^0.0.3",
+    "@quiteer/ts-config": "^0.0.5",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "electron": "22.3.2",
+    "electron-updater": "^5.3.0",
+    "eslint": "^8.35.0",
+    "unplugin-auto-import": "^0.15.1",
+    "unplugin-icons": "^0.15.3",
+    "unplugin-vue-components": "^0.24.1",
+    "unplugin-vue-macros": "^1.9.1"
+  }
+}

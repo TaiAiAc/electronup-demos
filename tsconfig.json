@@ -1,0 +1,14 @@
+{
+  "extends": "@quiteer/ts-config/tsconfig.node.json",
+  "include": [
+    "demos/**/*"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": true,
+    "declaration": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  }
+}

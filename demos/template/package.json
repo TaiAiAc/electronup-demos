@@ -1,0 +1,16 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "electronup build/electronup.config.ts --no-minify",
+    "build": "electronup build build/electronup.config.ts",
+    "dir": "electronup build build/electronup.config.ts --dir --no-asar --no-minify",
+    "build:test": "electronup build build/electronup.config.ts --mode test --no-asar --no-minify",
+    "typecheck": "vue-tsc --noEmit --skipLibCheck",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "@quiteer/electron-preload": "^0.0.9"
+  }
+}
