@@ -8,10 +8,21 @@ electronup的示例demo
 git clone https://github.com/TaiAiAc/electronup-demos
 ```
 or
+
 [跳转仓库](https://github.com/TaiAiAc/electronup-demos)下载zip
 解压到本地
 
 打开项目根目录下的命令行
+
+如果没有pnpm
+```sh
+npm i -g pnpm
+```
+
+```sh
+pnpm i
+```
+
 ```sh
 pnpm demo
 ```
