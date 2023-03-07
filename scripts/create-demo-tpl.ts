@@ -30,4 +30,6 @@ import { copy, ensureDir } from 'fs-extra'
   console.log('\n\n 安装依赖中...')
 
   await $`pnpm install`
+
+  console.log('\n\n 安装完成！')
 })()
