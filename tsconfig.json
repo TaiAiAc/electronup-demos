@@ -1,7 +1,8 @@
 {
   "extends": "@quiteer/ts-config/tsconfig.node.json",
   "include": [
-    "demos/**/*"
+    "demos/**/*",
+    "scripts/**/*"
   ],
   "compilerOptions": {
     "baseUrl": ".",

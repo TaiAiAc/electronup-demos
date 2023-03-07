@@ -16,6 +16,9 @@
     "electron",
     "electronup"
   ],
+  "scripts": {
+    "demo": "esno scripts/create-demo-tpl.ts"
+  },
   "dependencies": {
     "@quiteer/electron-ipc": "^0.1.0",
     "@youliso/electronic": "^0.1.2",
@@ -27,14 +30,20 @@
     "@quiteer/electronup": "^1.0.0",
     "@quiteer/eslint-config": "^0.0.3",
     "@quiteer/ts-config": "^0.0.5",
+    "@types/fs-extra": "^11.0.1",
+    "@types/inquirer": "^9.0.3",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vitejs/plugin-vue-jsx": "^3.0.0",
     "electron": "22.3.2",
     "electron-updater": "^5.3.0",
     "eslint": "^8.35.0",
+    "esno": "^0.16.3",
+    "fs-extra": "^11.1.0",
+    "inquirer": "^9.1.4",
     "unplugin-auto-import": "^0.15.1",
     "unplugin-icons": "^0.15.3",
     "unplugin-vue-components": "^0.24.1",
-    "unplugin-vue-macros": "^1.9.1"
+    "unplugin-vue-macros": "^1.9.1",
+    "zx": "^7.2.0"
   }
 }
