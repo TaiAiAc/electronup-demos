@@ -2,6 +2,16 @@
 electronup的示例demo
 
 ## 使用
+
+使用 git 拉取模版到本地
+```git
+git clone https://github.com/TaiAiAc/electronup-demos
+```
+or
+[跳转仓库](https://github.com/TaiAiAc/electronup-demos)下载zip
+解压到本地
+
+打开项目根目录下的命令行
 ```sh
 pnpm demo
 ```
