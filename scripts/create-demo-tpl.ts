@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-expressions */
-/* eslint-disable no-console */
 import { $, path } from 'zx'
 import inquirer from 'inquirer'
 import { copy, ensureDir } from 'fs-extra'

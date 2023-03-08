@@ -1,4 +1,3 @@
-import { BrowserWindow } from 'electron'
 import { Ipc } from '@quiteer/electron-ipc'
 import preload from '@quiteer/electron-preload'
 import { appInstance, logError, windowInstance } from '@youliso/electronic'
@@ -12,7 +11,7 @@ appInstance.start().then(async () => {
     defaultPreload: preload as string
   })
 
-  const mainId = await windowInstance.create(
+  const main = await windowInstance.create(
     {
       title: 'main',
       route: '/',
@@ -26,39 +25,6 @@ appInstance.start().then(async () => {
       }
     }
   )
-
-  const win = BrowserWindow.fromId(mainId!)!
-
-  const childId = await windowInstance.create(
-    {
-      title: 'child',
-      route: '/',
-      headNative: true,
-      parentId: mainId
-    },
-    {
-      height: 700,
-      width: 400,
-      show: false,
-      webPreferences: {
-        sandbox: false
-      }
-    }
-  )
-  const child = BrowserWindow.fromId(childId!)!
-
-  win.once('ready-to-show', () => {
-    setTimeout(() => {
-      const [x, y] = win.getPosition()
-      console.log('x, y: ', x, y)
-      child.setPosition(x + 990, y)
-      child.show()
-    }, 1300)
-  })
-
-  win.on('will-move', (event, newBounds) => {
-    child.setPosition(newBounds.x + 990, newBounds.y)
-  })
 })
   .catch(logError)
 
