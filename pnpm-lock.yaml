@@ -57,7 +57,13 @@ importers:
       unplugin-vue-macros: 1.9.1_wahnhgkv24wdnnevlbh26c63xq
       zx: 7.2.0
 
-  demos/test:
+  demos/122211asdd111111:
+    specifiers:
+      '@quiteer/electron-preload': ^0.0.9
+    dependencies:
+      '@quiteer/electron-preload': 0.0.9
+
+  demos/sadas:
     specifiers:
       '@quiteer/electron-preload': ^0.0.9
     dependencies:
